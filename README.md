@@ -1,6 +1,6 @@
 Problem Solving Practice with Python
 =====================================
-Daily python coding practice with problems in [Project Euler](https://www.projecteuler.net"Project Euler")
+Daily python coding practice with problems in [Project Euler](https://www.projecteuler.net)
 -----------------------------------------------------------------------------------------------------------
 # 1. What is Project Euler (source:https://www.projecteuler.net)
 '''
