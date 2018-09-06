@@ -4,7 +4,7 @@
 # Find the largest palindrome made from the product of two 3-digit numbers.
 import time
 
-def is_palirndome(word):
+def is_palindrome(word):
     reversed_word = word[::-1]
     if word == reversed_word:
         return True
@@ -12,12 +12,12 @@ def is_palirndome(word):
         return False
 
 start_time = time.time()
-largest_palindrum = 0
+largest_palindrome = 0
 for i in range(100, 1000):
     for j in range(i, 1000):
-        if is_palirndome(str(i*j)):
-            if i*j > largest_palindrum:
-                largest_palindrum = i*j
+        check_num = i * j
+        if is_palindrome(str(check_num)) and check_num > largest_palindrome:
+            largest_palindrome = check_num
 
-print(largest_palindrum)
+print(largest_palindrome)
 print("{} seconds".format(time.time() - start_time))
