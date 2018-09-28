@@ -19,7 +19,7 @@ scores = {
     "Z" : 26
     }
 
-with open("problem_21.txt", "r") as names:
+with open("problem_22.txt", "r") as names:
     data = sorted(names.read().replace('"', "").split(","))
 
 result = 0
@@ -32,7 +32,7 @@ print(result)
 #
 # # solution 2
 # ALPHABETS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
-# with open("problem_21.txt", "r") as names:
+# with open("problem_22.txt", "r") as names:
 #     data = sorted(names.read().replace('"', "").split(','))
 #
 # result = 0
