@@ -20,5 +20,4 @@ for n in range(345, 10**4):
         if freq[chk][1] == 5:
             print(freq[chk][0])
             break
-print(freq)
 print(f"{time.time() - start_time} seconds")
