@@ -77,20 +77,3 @@ for D in range(2, 10**3+1):
 
 print(answer)
 print("%.6f seconds" % (time.time() - start_time))
-
-max_x = max_n = 0
-for n in range(1001):
-    r = n ** 0.5
-    num, den = 1, int(r)
-    if den ** 2 != n:
-        x, x_prev, y, y_prev = den, 1, 1, 0
-        while x ** 2 - n * y ** 2 != 1:
-            this_den = (n - den ** 2) // num
-            a = int((r + den) / this_den)
-            x, x_prev = x * a + x_prev, x
-            y, y_prev = y * a + y_prev, y
-            num, den = this_den, a * this_den - den
-        if x > max_x:
-            max_x, max_n = x, n
-
-print(max_n)
